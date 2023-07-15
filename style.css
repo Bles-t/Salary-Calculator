@@ -1,0 +1,11 @@
+h1 {
+  background-color: gray;
+  text-align: center;
+  color: aliceblue;
+  padding: 30px;
+}
+
+.Employee {
+  font-weight: bold;
+  font-size: 30px;
+}
