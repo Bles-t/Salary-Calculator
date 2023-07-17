@@ -1,5 +1,5 @@
 console.log("Hello World");
-
+monthCounter = 0
 function submitForm(event) {
   console.log(submitForm);
 
@@ -23,13 +23,21 @@ function submitForm(event) {
   <td>${iDVal}</td>
   <td>${titleVal}</td>
   <td>${aSalVal}</td>
-  <td><button onclick="removeRow(
-
-    )">Delete</button></td>
+  <td><button onclick="removeRow(event)">Delete</button></td>
 </tr>`
 
+  monthlyTotal = document.querySelector('#totalSum')
+
+  totalMonth = aSalVal
+
+  monthlyTotal.innerHTML += `
+  <div>
+  <p id="totalSum" class="total">Total Monthly:${totalMonth}</p>
+</div>
+  `
+
   console.log(salaryTable);
-  
+
 
 }
 
