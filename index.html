@@ -14,10 +14,65 @@
     <p class="Employee">Add Employee</p>
 
   </div>
+
+  <form onsubmit="submitForm(event)">
+
+    <input id="fName-input" class="input-buttons" placeholder="First Name" type="text">
+    <input id="lName-input" class="input-buttons" placeholder="Last Name" type="text">
+    <input id="iD-input" class="input-buttons" placeholder="ID" type="number">
+    <input id="title-input" class="input-buttons" placeholder="Title" type="text">
+    <input id="aSalary-input" class="input-buttons" placeholder="Annual Salary" type="number">
+    <input type="submit">
+
+
+  </form>
+
   <div>
-    <input type="text">
+    <p class="Employee">Employees</p>
+  </div>
+  <table id="Salary-Info">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Annual Salary</th>
+
+      </tr>
+    </thead>
+    <tbody id="salaryData">
+      <tr>
+        <td>Jen</td>
+        <td>Barber</td>
+        <td>4521</td>
+        <td>Team Lead</td>
+        <td>80,000</td>
+        <td><button onclick="removeRow(event)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>Maurice</td>
+        <td>Moss</td>
+        <td>8724</td>
+        <td>Support Team</td>
+        <td>58,000</td>
+        <td><button onclick="removeRow(event)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>Roy</td>
+        <td>Smith</td>
+        <td>9623</td>
+        <td>Quality Assurance</td>
+        <td>48,000</td>
+        <td><button onclick="removeRow(event)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <p class="total">Total Monthly:</p>
   </div>
 
+  <script src="client.js"></script>
 </body>
 
 </html>
