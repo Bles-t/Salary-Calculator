@@ -14,6 +14,7 @@ function submitForm(event) {
 
 
   let salaryTable = document.querySelector('#salaryData');
+  let monthlyTotal = document.querySelector('#totalSum');
 
   salaryTable.innerHTML += `
   <tr>
@@ -26,15 +27,15 @@ function submitForm(event) {
   <td><button onclick="removeRow(event)">Delete</button></td>
 </tr>`
 
-  monthlyTotal = document.querySelector('#totalSum')
 
-  totalMonth = aSalVal
 
-  monthlyTotal.innerHTML += `
+  monthCounter += Number(aSalVal);
+
+  monthlyTotal.innerHTML = `
   <div>
-  <p id="totalSum" class="total">Total Monthly:${totalMonth}</p>
+  <p id="totalSum" class="total">Total Monthly:${monthCounter}</p>
 </div>
-  `
+  `;
 
   console.log(salaryTable);
 
