@@ -48,7 +48,17 @@ function submitForm(event) {
 
 
 function removeRow(event) {
+  const deltaRow = event.target.closest('tr');
 
-  event.target.closest('tr').remove();
+  const deletedSalary = Number(deltaRow.querySelector('td:nth-child(5)').textContent);
+  deltaRow.remove();
 
+  monthCounter -= deletedSalary;
+
+  updateTotalMonthly()
+
+}
+function updateTotalMonthly() {
+  let monthlyTotal = document.querySelector('#totalSum');
+  monthlyTotal.textContent = `Total Monthly: ${monthCounter}`;
 }
