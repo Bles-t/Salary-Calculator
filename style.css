@@ -1,9 +1,9 @@
 body {
-  background-color: firebrick;
+  background-color: hotpink;
 }
 
 h1 {
-  background-color: gray;
+  background-color: rgb(67, 231, 231);
   text-align: center;
   color: aliceblue;
   padding: 30px;
@@ -48,4 +48,8 @@ td {
 
 .total {
   font-size: 20pt;
+}
+
+.highLight {
+  background-color: red;
 }

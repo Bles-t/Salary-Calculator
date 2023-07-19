@@ -1,5 +1,6 @@
-console.log("Hello World");
-monthCounter = 0
+console.log("Hello jWorld");
+let maxSalary = 20000;
+let monthCounter = 0
 function submitForm(event) {
   console.log(submitForm);
 
@@ -33,12 +34,15 @@ function submitForm(event) {
 
   monthlyTotal.innerHTML = `
   <div>
-  <p id="totalSum" class="total">Total Monthly:${monthCounter}</p>
+  <p id="totalSum" class="total ${monthCounter > 20000 ? 'highLight' : ''}">Total Monthly:${monthCounter}</p>
 </div>
   `;
 
   console.log(salaryTable);
 
+  if (Number(monthCounter) > maxSalary) {
+    console.log("To highjt")
+  }
 
 }
 
